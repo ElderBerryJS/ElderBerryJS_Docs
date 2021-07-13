@@ -1260,6 +1260,6 @@ That's not available yet. Something what you can do is host online the game with
 
 # * What to do now
 
-- Report any issue at https://github.com/ElderBerryJS/ElderBerryJS/issues
-- Make questions or discuss anything in https://github.com/ElderBerryJS/ElderBerryJS/discussions
+- Report any issue at [https://github.com/ElderBerryJS/ElderBerryJS/issues](https://github.com/ElderBerryJS/ElderBerryJS/issues)
+- Make questions or discuss anything in [https://github.com/ElderBerryJS/ElderBerryJS/discussions](https://github.com/ElderBerryJS/ElderBerryJS/discussions)
 - Create!!
