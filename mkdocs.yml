@@ -1,0 +1,9 @@
+site_name: ElderBerryJS Documentation
+site_url: https://example.com/
+extra_css:
+    - css/extra.css
+
+theme:
+  name: null
+  custom_dir: cinder
+  colorscheme: atom-one-dark-reasonable
