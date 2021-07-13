@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://example.com/">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>Welcome to ElderBerryJS - ElderBerryJS Documentation</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/atom-one-dark-reasonable.min.css">
+        
+    
+    <link href="css/extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href=".">ElderBerryJS Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#welcome-to-elderberryjs">Welcome to ElderBerryJS</a></li>
+        <li class="first-level "><a href="#getting-started">* Getting Started</a></li>
+        <li class="first-level "><a href="#test-play-try-your-project">* Test / play / try your project</a></li>
+            <li class="second-level"><a href="#important">\ IMPORTANT:</a></li>
+                
+        <li class="first-level "><a href="#preparing-things-for-your-projects">* Preparing things for your projects</a></li>
+        <li class="first-level "><a href="#conforming-the-canvas">* Conforming the canvas:</a></li>
+            <li class="second-level"><a href="#the-conform-function">\ The conform(); function</a></li>
+                
+                <li class="third-level"><a href="#change-the-size-of-the-canvas-in-widthheight-pixels-disp_res">Change the size of  the canvas in width/height pixels ("disp_res")</a></li>
+                <li class="third-level"><a href="#change-how-many-real-pixels-there-are-for-an-internal-pixel-disp_iscale-works-like-the-scale-of-a-map">Change how many real pixels there are for an internal pixel ("disp_Iscale") (Works like the scale of a map)</a></li>
+                <li class="third-level"><a href="#change-internal-background-color-disp_bg">Change internal background color ("disp_bg")</a></li>
+                <li class="third-level"><a href="#create-the-canvas-disp_canvas">Create the canvas ("disp_canvas")</a></li>
+                <li class="third-level"><a href="#change-the-name-of-the-gameprogram-app_title">Change the name of  the game/program ("app_title")</a></li>
+            <li class="second-level"><a href="#conform-unit-variables">\ Conform unit variables</a></li>
+                
+        <li class="first-level "><a href="#drawing-on-the-canvas">* Drawing on the canvas:</a></li>
+            <li class="second-level"><a href="#drawpixel">\ drawPixel():</a></li>
+                
+            <li class="second-level"><a href="#drawline">\ drawLine():</a></li>
+                
+            <li class="second-level"><a href="#drawcircle">\ drawCircle():</a></li>
+                
+            <li class="second-level"><a href="#drawrect">\ drawRect():</a></li>
+                
+            <li class="second-level"><a href="#drawtext">\ drawText():</a></li>
+                
+            <li class="second-level"><a href="#drawtile">\ drawTile():</a></li>
+                
+        <li class="first-level "><a href="#getting-input-from-the-user">* Getting Input from the user</a></li>
+            <li class="second-level"><a href="#keyboard-inputs">\ Keyboard inputs</a></li>
+                
+                <li class="third-level"><a href="#key-held">Key held:</a></li>
+                <li class="third-level"><a href="#key-downup">Key down/up:</a></li>
+            <li class="second-level"><a href="#mouse-inputs">\ Mouse inputs</a></li>
+                
+                <li class="third-level"><a href="#button-held">Button held:</a></li>
+                <li class="third-level"><a href="#button-downup">Button Down/Up:</a></li>
+                <li class="third-level"><a href="#mouse-wheel-movement">Mouse wheel movement:</a></li>
+                <li class="third-level"><a href="#mouse-position">Mouse position:</a></li>
+        <li class="first-level "><a href="#creating-objects">* Creating objects</a></li>
+            <li class="second-level"><a href="#reading-changing-properties-of-objects">\ Reading / changing properties of objects</a></li>
+                
+            <li class="second-level"><a href="#understanding-collisions">\ Understanding collisions</a></li>
+                
+            <li class="second-level"><a href="#previewing-collisions">\ Previewing collisions</a></li>
+                
+            <li class="second-level"><a href="#detecting-collisions">\ Detecting collisions</a></li>
+                
+            <li class="second-level"><a href="#destroying-objects">\ Destroying objects</a></li>
+                
+        <li class="first-level "><a href="#changing-cameras-position">* Changing camera's position</a></li>
+        <li class="first-level "><a href="#playing-sound-beta">* Playing sound (BETA)</a></li>
+        <li class="first-level "><a href="#exporting">* Exporting</a></li>
+        <li class="first-level "><a href="#what-to-do-now">* What to do now</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="welcome-to-elderberryjs">Welcome to ElderBerryJS</h1>
+<p>Programmed, designed and documented by <strong><a href="https://github.com/JMIDEV">JMIDEV</a></strong>.</p>
+<p><img alt="Logo_with_text" src="img/logo%20more.svg" /></p>
+<p>A powerful <strong>JavaScript</strong> <strong>based</strong> Retro focused game engine, that will make your <strong>life easier</strong> when doing things like getting the <strong>mouse position</strong>, getting <strong>keyboard input</strong>, drawing <strong>pixelated circles, rectangles, and lines with the choice of filling them</strong>, drawing <strong>sprites/tiles</strong> that can be <strong>flipped</strong> and <strong>transparent</strong>, creating <strong>objects</strong> that can <strong>collide</strong> with each other, etc...</p>
+<p>In this documentation, you'll learn how to use it in a very <strong>intuitive</strong> way, so let's get started!</p>
+<p>(Please, I'm Spanish, if you find spelling errors, gramatical errors, etc... Let me know in <a href="https://github.com/ElderBerryJS/ElderBerryJS/issues">Github Issues</a>)</p>
+<hr />
+<h1 id="getting-started">* Getting Started</h1>
+<p>To get started, you'll need to go to the <a href="https://github.com/ElderBerryJS/ElderBerryJS-GameEngine">repository</a>, and click on the Download Code button:</p>
+<p><img alt="GreenbuttonwithanarrowthatsaysCODE" src="img/dwnldcode.png" /></p>
+<p>And then, select download ZIP. That way, you will only need to extract the compressed ZIP into a folder, keep only the <code>ElderBerryJS GameEngine</code> folder, and once you do that, inside of that folder you'll have all of the Engine files for creating your first project.</p>
+<p>The folder has the next files/folders:</p>
+<pre><code>\internals:
+
+    ...
+
+\yourfiles:
+
+    [EMPTY]
+
+\BG.jpg
+
+\TFDU.png
+
+\index.html
+
+\yourcode.js
+</code></pre>
+<p>Inside the <code>internals</code> folder, you'll not need to touch anything, since inside there are the scripts that make the Engine work, and by the moment, the folder called <code>yourfiles</code> will not be used, but in the main folder, at any moment you'll need to edit any of those four files, principally <code>yourcode.js</code>, so let's take a look at them:</p>
+<ul>
+<li>
+<p><code>yourcode.js</code>: This is <strong>the most important file</strong> you'll use, since here you will write <strong>your own code for your game</strong>, including <strong>creating objects, drawing text, and all the things involved in creating the game.</strong></p>
+</li>
+<li>
+<p><code>BG.jpg</code>: This is the background that will be shown outside of the drawing canvas. By default, it will look like this, but you can modify it if you want:</p>
+</li>
+</ul>
+<p>​ <img alt="DefaultBackground" src="img/defaultBGoutsidecanvas.jpg" /></p>
+<ul>
+<li>
+<p><code>TFDU.png</code>: Here you will place ALL THE IMAGES/TILES that will be used on your project, ONLY HERE, so yeah, you will need to "crop" the image during code, but you'll later see it's not that hard.</p>
+</li>
+<li>
+<p><code>index.html</code>: This file is the one that browsers will load so people can play your games. This file calls all the scripts of the engine, and also <code>yourcode.js</code>.</p>
+</li>
+</ul>
+<hr />
+<h1 id="test-play-try-your-project">* Test / play / try your project</h1>
+<p>This engine works using something called "JavaScript modules", which don't work if you only double click the <code>index.html</code> file.</p>
+<p>For testing your project, you'll need to "localhost" it, and for that, we'll use PYTHON.</p>
+<p>First of all, you'll need to install python, by going to <a href="https://www.python.org/">Python's website</a> (If you are using a Linux distribution, you probably already have python on your system, and if you don't know if you have it, in any system, go to the terminal and write <code>python --version</code>, and then, if you have python, you'll see the number of the current python version installed).</p>
+<p>Once you have python, go to your system terminal and then navigate with <code>cd [Folder]</code> to the folder where you have the files <code>yourcode.js</code>, <code>index.html</code>......</p>
+<p><u>For example</u>, if you have your project in a folder inside the "C:\" drive called "ebproject", you need to enter <code>cd C:\ebproject</code>.</p>
+<p>Once there, you'll need to enter a command depending on your system:</p>
+<pre><code class="language-python">#In Mac/Linux:
+python -m SimpleHTTPServer
+#In Windows:
+python -m http.server
+</code></pre>
+<p>Then, you just need to open your web browser and go to <code>http://localhost:8000/</code>.</p>
+<p>If you have done everything right, you'll see the pre-established program, which just shows this:</p>
+<p><img alt="screenshotprestablished" src="img/prestablishedprojectimage.png" /></p>
+<h2 id="important"><strong>\ IMPORTANT:</strong></h2>
+<p>Along development, you'll need to reload the localhost to see the changes reflected, but sometimes, it may not update some files, or simply not change anything, and probably, it will not be your fault, because there is something called, CACHE, which saves content from websites in a temporal memory to save web load time, but it can lead to things like this.</p>
+<p>To avoid that, everytime you reload the localhost, press <code>Ctrl + F5</code>, and then, your game will be reloaded with cache erased!!</p>
+<hr />
+<h1 id="preparing-things-for-your-projects">* Preparing things for your projects</h1>
+<p>Once you have your project where you want it to be, you'll need to open <code>yourcode.js</code> with your favourite code editor <strong>(I recommend using Visual Studio Code, since it will autocomplete a lot of things and will make your work flow faster and easier).</strong></p>
+<p>Now, you probably don't want to keep the little "Welcome to ElderBerryJS!!" message, so let's delete some things from the code.</p>
+<p>That way erase the entire <code>yourcode.js</code> content, and copy/paste all this:</p>
+<pre><code class="language-javascript">//DON'T TOUCH. Only touch if you want to add more modules.
+
+import * as conform_unit from './internals/conform.js';               //DEDICATED TO THE CANVAS AND GENERATION OF THINGS
+import * as draw_unit from './internals/graphics.js';                 //DRAWING CIRCLES, LINES, IMAGES/TILES, etc...
+import * as input_unit from './internals/input.js';                   //GET KEYBOARD/MOUSE HOLDS, GET THE MOUSE's POSITION, etc...
+import * as objects_unit from './internals/objectsystem.js';          //GENERATE OBJECTS, DESTROY THEM, DETECT COLLISIONS, etc...
+import * as sound_unit from './internals/sound.js';                   //PLAY MUSIC/SFX
+
+//PREPARING THINGS
+
+conform_unit.conform(&quot;disp_res&quot;, 1024, 768);                          //CANVAS SIZE
+conform_unit.conform(&quot;disp_Iscale&quot;, 4);                               //ONE PIXEL IS FOUR PIXELS IN THE CANVAS
+conform_unit.conform(&quot;disp_bg&quot;, &quot;#000000&quot;);                           //CANVAS BACKGROUND IN HEXADECIMAL
+conform_unit.conform(&quot;disp_canvas&quot;, 1);                               //GENERATING THE CANVAS
+conform_unit.conform(&quot;app_title&quot;, &quot;ElderberryJS App&quot;);                //NAME OF THE WINDOW/TAB
+
+objects_unit.setcolwireframe(false);                                  //SEE THE COLLISION BOXES OF THE OBJECTS
+
+//CAMERA (ONLY ONE)
+
+export var E_camera = new draw_unit.camera();                         // CAMERA OBJECT
+
+//CREATE OBJECTS HERE
+
+
+
+//YOUR VARS
+
+
+
+//EXECUTED AT THE BEGINNING
+
+export function Start(){
+
+
+
+}
+
+//EXECUTED EVERY FRAME BEFORE THE OBJECTS HAVE BEEN RENDERED
+
+export function Update(){
+
+
+
+}
+
+//EXECUTED EVERY FRAME AFTER THE OBJECTS HAVE BEEN RENDERED
+
+export function AfterObjectsUpdate(){
+
+
+
+}
+
+//MOUSE BUTTON DOWN/UP
+
+export function Mouse(mode, situation){
+
+    if(mode == &quot;Down&quot;){
+
+        if(situation == &quot;Left&quot;){
+
+            //Left mouse button pressed
+
+        }
+
+        if(situation == &quot;Middle&quot;){
+
+            //Middle mouse button pressed
+
+        }
+
+        if(situation == &quot;Right&quot;){
+
+            //Middle mouse button pressed
+
+        }
+
+    }
+
+    if(mode == &quot;Up&quot;){
+
+        if(situation == &quot;Left&quot;){
+
+            //Left mouse button lifted
+
+        }
+
+        if(situation == &quot;Middle&quot;){
+
+            //Middle mouse button lifted
+
+        }
+
+        if(situation == &quot;Right&quot;){
+
+            //Middle mouse button lifted
+
+        }
+
+    }
+
+}
+
+//KEY DOWN/UP
+
+export function Keyboard(mode, situation){
+
+    if(mode == &quot;Down&quot;){
+
+        //Key is pressed down
+
+    }
+
+    if(mode == &quot;Up&quot;){
+
+        //Key is lifted up
+
+
+
+    }
+
+}
+</code></pre>
+<hr />
+<h1 id="conforming-the-canvas">* Conforming the canvas:</h1>
+<p>You may ask, how's that there isn't a canvas in the HTML file, but there are things rendered to a canvas.</p>
+<p>That's because of the CONFORM UNIT.</p>
+<p>The <code>conform_unit</code> is the unit that you'll use for generating your canvas, getting its width, etc...</p>
+<p>By default, you can see that the conform is already prepared with these lines:</p>
+<pre><code class="language-javascript">conform_unit.conform(&quot;disp_res&quot;, 1024, 768);
+conform_unit.conform(&quot;disp_Iscale&quot;, 4);
+conform_unit.conform(&quot;disp_bg&quot;, &quot;#000000&quot;);
+conform_unit.conform(&quot;disp_canvas&quot;, 1);
+conform_unit.conform(&quot;app_title&quot;, &quot;ElderberryJS App&quot;);
+</code></pre>
+<p>But let's take a look at the different functionalities that this unit is able to give us:</p>
+<h2 id="the-conform-function">\ The <strong>conform();</strong> function</h2>
+<p>This is the function dedicated to generating the canvas, changing its resolution, changing its scale (real screen pixels per internal pixel), the color of the background of the canvas, and changing the name of the program. <strong><u>It needs to run after the imports</u></strong>. Let's take a look at the different things that the function can do:</p>
+<h3 id="change-the-size-of-the-canvas-in-widthheight-pixels-disp_res">Change the size of  the canvas in width/height pixels ("disp_res")</h3>
+<pre><code class="language-javascript">conform_unit.conform(&quot;disp_res&quot;, PIXELS_WIDTH, PIXELS_HEIGHT);
+//Example
+conform_unit.conform(&quot;disp_res&quot;, 1024, 768);
+</code></pre>
+<h3 id="change-how-many-real-pixels-there-are-for-an-internal-pixel-disp_iscale-works-like-the-scale-of-a-map">Change how many real pixels there are for an internal pixel ("disp_Iscale") <u>(Works like the scale of a map)</u></h3>
+<pre><code class="language-javascript">conform_unit.conform(&quot;disp_Iscale&quot;, REALPIXELS_PER_INTERNALPIXELS);
+//Example
+conform_unit.conform(&quot;disp_Iscale&quot;, 4);
+</code></pre>
+<h3 id="change-internal-background-color-disp_bg">Change internal background color ("disp_bg")</h3>
+<pre><code class="language-javascript">conform_unit.conform(&quot;disp_bg&quot;, COLOR IN HEXADECIMAL);
+//Example
+conform_unit.conform(&quot;disp_bg&quot;, &quot;#ff0000&quot;);
+</code></pre>
+<h3 id="create-the-canvas-disp_canvas">Create the canvas ("disp_canvas")</h3>
+<pre><code class="language-javascript">//Needs to run after all the other &quot;disp_&quot; conforms
+
+conform_unit.conform(&quot;disp_canvas&quot;, type);
+
+//Example:
+
+conform_unit.conform(&quot;disp_canvas&quot;, 1); //Align to the center
+                                     //or
+conform_unit.conform(&quot;disp_canvas&quot;, 2); //Align to the top-left corner
+</code></pre>
+<h3 id="change-the-name-of-the-gameprogram-app_title">Change the name of  the game/program ("app_title")</h3>
+<pre><code class="language-javascript">conform_unit.conform(&quot;app_title&quot;, TITLE);
+//Example
+conform_unit.conform(&quot;app_title&quot;, &quot;My amazing game name HD&quot;);
+</code></pre>
+<h2 id="conform-unit-variables">\ Conform unit variables</h2>
+<ul>
+<li><code>conform_unit.display_canvas</code>: The HTML canvas generated with <code>"disp_canvas"</code> <u>(You shouldn't use it commonly, since later, we'll see the <code>draw_unit</code>, that will help us drawing graphics).</u></li>
+<li><code>conform_unit.display_context</code>: The 2D context of the HTML canvas, also generated with <code>"disp_canvas"</code> <u>(The same as with <code>conform_unit.display_canvas</code>)</u>.</li>
+<li><code>conform_unit.disp_width</code>: The width of the HTML canvas.</li>
+<li><code>conform_unit.disp_height</code>: The height of the HTML canvas.</li>
+<li><code>conform_unit.disp_type</code>: The type of canvas we assigned in <code>"disp_canvas"</code>.</li>
+<li><code>conform_unit.disp_Iscale</code>: The scale you assigned in <code>"disp_Iscale"</code> (pixels on the screen per internal pixels).</li>
+<li><code>conform_unit.disp_Iwidth</code>: The width of the screen in internal pixels (REAL PIXELS / SCALE).</li>
+<li><code>conform_unit.disp_Iheight</code>: The height of the screen in internal pixels (REAL PIXELS / SCALE).</li>
+<li><code>conform_unit.disp_bg</code>: The background color you did set in <code>"disp_bg"</code>.</li>
+<li><code>conform_unit.app_title</code>: The title you did set in <code>"app_title"</code>.</li>
+</ul>
+<hr />
+<h1 id="drawing-on-the-canvas">* Drawing on the canvas:</h1>
+<p>For drawing graphics on the canvas, we'll be using the <code>draw_unit</code>, that is able to draw individual pixels, lines, circles, rectangles, tiles/images, and text.</p>
+<p>The draw functions we are going to see later need to be written inside:</p>
+<pre><code class="language-javascript">export function Update(){
+
+
+
+}
+</code></pre>
+<p>Or inside:</p>
+<pre><code class="language-javascript">export function AfterObjectsUpdate(){
+
+
+
+}
+</code></pre>
+<p>Because if you write it inside <code>export function Start()</code>, the screen refresh will erase it <strong>(Later, we'll talk about objects, that will not need to be redrawn manually, but they can only render TILES or IMAGES).</strong></p>
+<p>Let's take a look at the different draw functions:</p>
+<h2 id="drawpixel"><code>\ drawPixel()</code>:</h2>
+<p>This function needs only three arguments:</p>
+<ul>
+<li><code>x</code>: The X position of the pixel (internal pixels).</li>
+<li><code>y</code>: The Y position of the pixel (internal pixels).</li>
+<li><code>color</code>: The color of the pixel (Hexadecimal colors)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawPixel(8, 8, &quot;#00ff00&quot;);
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="greenpixel" src="img/drawpixelscreenshot.png" /></p>
+<h2 id="drawline"><code>\ drawLine()</code>:</h2>
+<p>This function needs only five arguments:</p>
+<ul>
+<li><code>x0</code>: The first point's x.</li>
+<li><code>y0</code>: The first point's y.</li>
+<li><code>x1</code>: The second point's x.</li>
+<li><code>y1</code>: The second point's y.</li>
+<li><code>color</code>: The color of the line (Hexadecimal colors)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawLine(8, 8, 32, 32, &quot;#0000ff&quot;)
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="" src="img/drawlinescreenshot.png" /></p>
+<h2 id="drawcircle"><code>\ drawCircle()</code>:</h2>
+<p>This function needs only six arguments:</p>
+<ul>
+<li><code>filled</code>: 0: Not filled, 1: Filled, 2: Both.</li>
+<li><code>x</code>: X position of the circle by its top-left corner.</li>
+<li><code>y</code>: Y position of the circle by its top-left corner.</li>
+<li><code>size</code>: One number correspondent to the width and height of the circle (The width and height are the same).</li>
+<li><code>internal_color</code>: The color in hexadecimal for filled circles.</li>
+<li><code>external_color</code>: The color in hexadecimal for non-filled circles.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawCircle(0, 0, 0, 32, &quot;#ff0000&quot;, &quot;#00ff00&quot;);    //NOT FILLED
+    draw_unit.drawCircle(1, 32, 0, 32, &quot;#ff0000&quot;, &quot;#00ff00&quot;);   //FILLED
+    draw_unit.drawCircle(2, 64, 0, 32, &quot;#ff0000&quot;, &quot;#00ff00&quot;);   //BOTH
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="threecircles" src="img/drawcirclescreenshot.png" /></p>
+<h2 id="drawrect"><code>\ drawRect()</code>:</h2>
+<p>This function needs only seven arguments:</p>
+<ul>
+<li><code>filled</code>: 0: Not filled, 1: Filled, 2: Both.</li>
+<li><code>x</code>: X position of the rectangle by its top-left corner.</li>
+<li><code>y</code>: Y position of the rectangle by its top-left corner.</li>
+<li><code>width</code>: Width of the rectangle.</li>
+<li><code>height</code>: Height of the rectangle.</li>
+<li><code>internal_color</code>: The color in hexadecimal for filled rectangles.</li>
+<li><code>external_color</code>: The color in hexadecimal for non-filled rectangles.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawRect(0, 0, 0, 32, 16, &quot;#ff00ff&quot;, &quot;#00ff00&quot;);     //NOT FILLED
+    draw_unit.drawRect(1, 0, 16, 32, 16, &quot;#ff00ff&quot;, &quot;#00ff00&quot;);    //FILLED
+    draw_unit.drawRect(2, 0, 32, 32, 16, &quot;#ff00ff&quot;, &quot;#00ff00&quot;);    //BOTH
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="threerects" src="img/drawrectscreenshot.png" /></p>
+<h2 id="drawtext"><code>\ drawText()</code>:</h2>
+<p>This function needs only five arguments:</p>
+<ul>
+<li><code>Font</code>: There's only one font available by the moment, which is <code>draw_unit.Font_Arcade</code>.</li>
+<li><code>Text</code>: The text displayed.</li>
+<li><code>Color</code>: The color of the text in hexadecimal.</li>
+<li><code>x</code>: The X position of the text:.</li>
+<li><code>y</code>: The Y position of the text.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawText(draw_unit.Font_Arcade, &quot;Lorem ipsum dolor sit amet.&quot;, &quot;#ffffff&quot;, 0, 0);     //WHITE
+    draw_unit.drawText(draw_unit.Font_Arcade, &quot;Lorem ipsum dolor sit amet.&quot;, &quot;#ff0000&quot;, 0, 8);     //RED
+    draw_unit.drawText(draw_unit.Font_Arcade, &quot;Lorem ipsum dolor sit amet.&quot;, &quot;#00ff00&quot;, 0, 16);    //GREEN
+    draw_unit.drawText(draw_unit.Font_Arcade, &quot;Lorem ipsum dolor sit amet.&quot;, &quot;#0000ff&quot;, 0, 24);    //BLUE
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="fourtextsofdifferentcolors" src="img/drawtextscreenshot.png" /></p>
+<h2 id="drawtile"><code>\ drawTile()</code>:</h2>
+<p>Now, let's get a little bit technical.</p>
+<p>Old systems, such as the <strong>Sega Master System</strong>, the <strong>NES</strong>, the <strong>Sega Genesis</strong>, and all the other devices of the time, stored graphics in a <strong>table</strong>, which, is basically one single image, divided by <strong>8x8</strong> tiles. Then, for rendering <strong>sprites</strong>, they needed to <strong>cut</strong> parts of the table to render the sprites, and in some cases, <strong>combine</strong> sprites/tiles to create sprites bigger than 8x8.</p>
+<p><strong>ElderBerryJS</strong> uses something similar, but <strong>easier</strong>, because we can draw tiles/sprites <strong>bigger than 8x8</strong> without combining. Remember that file called <code>TFDU.png</code>?? Well, in that PNG file, we are going to store <strong>all the sprite graphics of your project</strong> (the file can be as bigger as you want).</p>
+<p>By default, for the pre-established program, the <strong>TFDU</strong> <strong>(Tiles for drawing unit)</strong> has these graphics for the blue ball and the EBJS logo:</p>
+<p><img alt="logoandblueball" src="img/defaultTFDU.png" /></p>
+<p>But for this example, we'll use a sprite pack from a website called <a href="https://opengameart.org"><strong>OPENGAMEART.org</strong></a>, called <a href="https://opengameart.org/content/beastlands"><strong>BEASTLANDS</strong></a>, made by <a href="https://opengameart.org/users/surt"><strong>Surt</strong></a>.</p>
+<p>I have picked a few tiles from the pack, and made this TFDU:</p>
+<p><img alt="fieldthings" src="img/newTFDU.png" /></p>
+<p>For drawing the sprites we'll call the <code>drawtile();</code> function, that will crop the TFDU image <strong>(and that image only, don't rename the TFDU file, or add a new one, the engine only reads from TFDU.png)</strong> by saying the x and y offset of the crop, and the width and height of the crop.</p>
+<p>Let's take a look at the different arguments of the function, and later, we'll explain a few things:</p>
+<ul>
+<li><code>tile_offset_x</code>: The X coordinate inside TFDU.png to start clipping the tile.</li>
+<li><code>tile_offset_y</code>: The Y coordinate inside TFDU.png to start clipping the tile.</li>
+<li><code>tile_offset_width</code>: The Width of the clipping inside TFDU.png.</li>
+<li><code>tile_offset_height</code>: The Height of the clipping inside TFDU.png.</li>
+<li><code>x</code>: The X position to draw the clipped tile.</li>
+<li><code>y</code>: The Y position to draw the clipped tile.</li>
+<li><code>flippedx</code>: Write <code>true</code> to flip horizontally. Write <code>false</code> to not flip.</li>
+<li><code>flippedy</code>: Write <code>true</code> to flip vertically. Write <code>false</code> to not flip.</li>
+<li><code>opacity</code>: Opacity from 0 to 1. For example, <code>0.5</code> would be 50% opacity.</li>
+</ul>
+<p>Now, let's understand how to <strong>clip</strong> images from the TFDU. Let's try dividing the tilemap into, for example, 8x8 tiles:</p>
+<p><img alt="imgdivided" src="img/dividedsimple.png" /></p>
+<p>And now, let's try cropping the metal box:</p>
+<p><img alt="imagewithsignals" src="img/dividedshowing.png" /></p>
+<p>The red lines are the <code>tile_offset_x</code> and the <code>tile_offset_y</code>, and the green ones are the <code>tile_offset_width</code> and the <code>tile_offset_height</code>.</p>
+<p>With that done, let's draw that box at the position (8,8):</p>
+<pre><code class="language-javascript">export function Update(){
+
+    draw_unit.drawTile(8,0,16,16,8,8,false,false,1);
+
+}
+</code></pre>
+<p>And this is the result:</p>
+<p><img alt="boxcropped" src="img/boxcropped.png" /></p>
+<p>That way, combining different tiles, we can make different sceneries like this very simple one:</p>
+<pre><code class="language-javascript">//WE DID ALSO ESTABLISH conform_unit.conform(&quot;disp_bg&quot;, &quot;#00e5ff&quot;);  
+
+export function Update(){
+
+    //BLOCKS
+
+    draw_unit.drawTile(8,0,16,16,8,24,false,false,1);
+    draw_unit.drawTile(8,0,16,16,24,24,false,false,1);
+    draw_unit.drawTile(8,0,16,16,40,24,false,false,1);
+    draw_unit.drawTile(8,0,16,16,56,24,false,false,1);
+    draw_unit.drawTile(8,0,16,16,72,24,false,false,1);
+    draw_unit.drawTile(8,0,16,16,88,24,false,false,1);
+
+    //FLOWERS
+
+    draw_unit.drawTile(0,0,8,8,16,16,false,false,1);      //NORMAL
+    draw_unit.drawTile(0,0,8,8,32,16,false,false,0.5);    //OPACITY 50%
+    draw_unit.drawTile(0,0,8,8,48,16,true,true,1);        //FLIPPED HORIZONTALLY AND VERTICALLY
+
+    //SIGN AND WATERMELON
+
+    draw_unit.drawTile(0,16,16,24,64,0,false,false,1);    //SIGN
+    draw_unit.drawTile(24,0,16,16,80,8,false,false,1);    //WATERMELON
+
+}
+</code></pre>
+<p>Result:</p>
+<p><img alt="simpletilescenery" src="img/scenerytilesdrawingresult.png" /></p>
+<hr />
+<h1 id="getting-input-from-the-user">* Getting Input from the user</h1>
+<p>For getting inputs from the mouse and the keyboard, we'll be accessing the <code>input_unit</code>.</p>
+<p>Let's get started by reading <strong>keyboard inputs</strong>.</p>
+<h2 id="keyboard-inputs">\ Keyboard inputs</h2>
+<p><img alt="Availablekeys" src="img/keyboardavailable.png" /></p>
+<p>In that example keyboard, the keys that are <strong>pink</strong>, are the keys that we'll be able to read in <strong>ElderBerryJS</strong>.</p>
+<p><strong>(The reason why we can't read the rest of keys, is that, if we checked all the keys, we would get a lot of delay (I tried), and also, that way, we have the classic limitation of buttons of retro consoles, and we don't really need more buttons)</strong></p>
+<p>Now let's take a look at the different things we can do with the Keyboard:</p>
+<h3 id="key-held">Key held:</h3>
+<p>For each key, there is a <code>boolean</code>, that will be <code>true</code> if that key is being held, and <code>false</code> if it isn't.</p>
+<p>These are the booleans we can access:</p>
+<pre><code>input_unit.up_pressed
+input_unit.down_pressed
+input_unit.left_pressed
+input_unit.right_pressed
+
+input_unit.z_pressed
+input_unit.x_pressed
+input_unit.c_pressed
+input_unit.a_pressed
+input_unit.s_pressed
+input_unit.d_pressed
+input_unit.q_pressed
+input_unit.w_pressed
+input_unit.e_pressed
+
+input_unit.space_pressed
+input_unit.shift_pressed
+</code></pre>
+<p>That way, if we want to check if the <strong>right arrow</strong> is held, we do this inside Update:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    if(input_unit.right_pressed){
+
+        //DO WHAT YOU WANT WHEN RIGHT HELD
+
+    }
+
+}
+</code></pre>
+<h3 id="key-downup">Key down/up:</h3>
+<p>For checking if a key was just pressed, or lifted, we'll not read anything from the <code>input_unit</code>, since, we already have a function that will read that, the <code>Keyboard()</code> function, at the bottom of <code>yourcode.js</code>:</p>
+<pre><code class="language-javascript">export function Keyboard(mode, situation){
+
+    if(mode == &quot;Down&quot;){
+
+        //Key is pressed down
+
+    }
+
+    if(mode == &quot;Up&quot;){
+
+        //Key is lifted up
+
+    }
+
+}
+</code></pre>
+<p>By default, it looks like that, but if we want to receive input, we'll need to put more IFs inside any of the two already existing IFs:</p>
+<pre><code class="language-javascript">//LEFT ARROW -----------------------------------------
+
+if(situation == &quot;left&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+//RIGHT ARROW -----------------------------------------
+
+if(situation == &quot;right&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+//DOWN ARROW -----------------------------------------
+
+if(situation == &quot;down&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+//UP ARROW -----------------------------------------
+
+if(situation == &quot;up&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// Z -----------------------------------------
+
+if(situation == &quot;z&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// X -----------------------------------------
+
+if(situation == &quot;x&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// C -----------------------------------------
+
+if(situation == &quot;c&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// A -----------------------------------------
+
+if(situation == &quot;a&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// S -----------------------------------------
+
+if(situation == &quot;s&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// D -----------------------------------------
+
+if(situation == &quot;d&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// Q -----------------------------------------
+
+if(situation == &quot;q&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// W -----------------------------------------
+
+if(situation == &quot;w&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// E -----------------------------------------
+
+if(situation == &quot;e&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// SPACE -----------------------------------------
+
+if(situation == &quot;space&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+
+// SHIFT -----------------------------------------
+
+if(situation == &quot;shift&quot;){
+
+    //DO WHAT YOU WANT
+
+}
+</code></pre>
+<p>For example, let's do that the scenery from before:</p>
+<p><img alt="simpletilescenery" src="img/scenerytilesdrawingresult.png" /></p>
+<p>Will only be drawn if a boolean <code>drawscenerytest</code> is <code>true</code>, and if we press down <strong>Z</strong>, that boolean will be <code>true</code>, and when we lift <strong>A</strong>, it will be <code>false</code>:</p>
+<pre><code class="language-javascript">//DECLARING drawscenerytest
+
+var drawscenerytest = false;
+
+//THE UPDATE FUNCTION
+
+export function Update(){
+
+    if(drawscenerytest){
+
+        //BLOCKS
+
+        draw_unit.drawTile(8,0,16,16,8,24,false,false,1);
+        draw_unit.drawTile(8,0,16,16,24,24,false,false,1);
+        draw_unit.drawTile(8,0,16,16,40,24,false,false,1);
+        draw_unit.drawTile(8,0,16,16,56,24,false,false,1);
+        draw_unit.drawTile(8,0,16,16,72,24,false,false,1);
+        draw_unit.drawTile(8,0,16,16,88,24,false,false,1);
+
+        //FLOWERS
+
+        draw_unit.drawTile(0,0,8,8,16,16,false,false,1);      //NORMAL
+        draw_unit.drawTile(0,0,8,8,32,16,false,false,0.5);    //OPACITY 50%
+        draw_unit.drawTile(0,0,8,8,48,16,true,true,1);        //FLIPPED HORIZONTALLY AND VERTICALLY
+
+        //SIGN AND WATERMELON
+
+        draw_unit.drawTile(0,16,16,24,64,0,false,false,1);    //SIGN
+        draw_unit.drawTile(24,0,16,16,80,8,false,false,1);    //WATERMELON
+
+    }
+
+}
+
+//THE Keyboard(); FUNCTION
+
+export function Keyboard(mode, situation){
+
+    if(mode == &quot;Down&quot;){
+
+        //Key is pressed down
+
+        if(situation == &quot;z&quot;){
+
+            drawscenerytest = true;
+
+        }
+
+    }
+
+    if(mode == &quot;Up&quot;){
+
+        //Key is lifted up
+
+        if(situation == &quot;a&quot;){
+
+            drawscenerytest = false;
+
+        }
+
+    }
+
+}
+</code></pre>
+<p>Result:</p>
+<p>(BEFORE)</p>
+<p><img alt="BEFORE_Z" src="img/scenerytilesdrawingresultempty.png" /></p>
+<p>(Z DOWN)</p>
+<p><img alt="Z_Down" src="img/scenerytilesdrawingresult.png" /></p>
+<p>(A LIFTED)</p>
+<p><img alt="BEFORE_Z" src="img/scenerytilesdrawingresultempty.png" /></p>
+<h2 id="mouse-inputs">\ Mouse inputs</h2>
+<p><img alt="mouse" src="img/mouseimage.png" /></p>
+<p>Unlike the keyboard, we'll be able to get <strong>a lot of data</strong> from the mouse:</p>
+<ul>
+<li>Button <strong>holding</strong>, <strong>pressing</strong>, or <strong>lifting</strong>.</li>
+<li>Getting <strong>mouse wheel movement</strong>.</li>
+<li>Getting <strong>mouse position</strong> relative to the game canvas.</li>
+</ul>
+<h3 id="button-held">Button held:</h3>
+<p>Just like with the keyboard, we got three <code>booleans</code> that are <code>true</code> if the button is held and <code>false</code> if not:</p>
+<pre><code>input_unit.Lmouse_Press //LEFT MOUSE BUTTON
+input_unit.Mmouse_Press //MIDDLE MOUSE BUTTON
+input_unit.Rmouse_Press //RIGHT MOUSE BUTTON
+</code></pre>
+<p>That way, enter that in a IF inside Update, and you'll be able to receive mouse buttons' holding.</p>
+<pre><code class="language-javascript">export function Update(){
+
+    if(input_unit.Lmouse_Press){
+
+        //DO WHAT YOU WANT WHEN LEFT MOUSE BUTTON HELD
+
+    }
+
+}
+</code></pre>
+<h3 id="button-downup">Button Down/Up:</h3>
+<p>Now, the function that we'll use for receiving mouse buttons' press and lifting, is the <code>Mouse()</code> function, before the <code>Keyboard()</code> function:</p>
+<pre><code class="language-javascript">export function Mouse(mode, situation){
+
+    if(mode == &quot;Down&quot;){
+
+        if(situation == &quot;Left&quot;){
+
+            //Left mouse button pressed
+
+        }
+
+        if(situation == &quot;Middle&quot;){
+
+            //Middle mouse button pressed
+
+        }
+
+        if(situation == &quot;Right&quot;){
+
+            //Middle mouse button pressed
+
+        }
+
+    }
+
+    if(mode == &quot;Up&quot;){
+
+        if(situation == &quot;Left&quot;){
+
+            //Left mouse button lifted
+
+        }
+
+        if(situation == &quot;Middle&quot;){
+
+            //Middle mouse button lifted
+
+        }
+
+        if(situation == &quot;Right&quot;){
+
+            //Middle mouse button lifted
+
+        }
+
+    }
+
+}
+</code></pre>
+<p>You can see that everything is already written, so just put your code where needed and you'll be done!!</p>
+<h3 id="mouse-wheel-movement">Mouse wheel movement:</h3>
+<p>For receiving the mouse wheel movement, we'll access a value on the <code>input_unit</code>:</p>
+<pre><code>input_unit.Mmouse_Dir
+</code></pre>
+<p>That works like this:</p>
+<ul>
+<li>If the mouse wheel is moving <strong>up</strong>, its value will be <code>"Up"</code>.</li>
+<li>If the mouse wheel is moving <strong>down</strong>, its value will be <code>"Down"</code>.</li>
+<li>If the mouse wheel <strong>isn't moving</strong>, its value will be <code>"Stop"</code>.</li>
+</ul>
+<p>That way, by using IFs, you can detect mouse wheel movement.</p>
+<h3 id="mouse-position">Mouse position:</h3>
+<p>For reading the <strong>mouse position</strong>, we'll access two values from the <code>input_unit</code>:</p>
+<pre><code>input_unit.Input_ImouseX
+input_unit.Input_ImouseY
+</code></pre>
+<p>That way, we can do just like in the pre-established program, where the blue ball is in the mouse position:</p>
+<p><img alt="screenshotprestablished" src="img/prestablishedprojectimage.png" /></p>
+<h1 id="creating-objects">* Creating objects</h1>
+<p>Objects in <strong>ElderBerryJS</strong> are variables, that can detect <strong>collisions with other objects</strong>, and render <strong>their own tiles/images</strong> from the <code>TFDU.png</code>.</p>
+<p>For creating objects, we'll access the <code>objects_unit</code>'s <code>E_Object</code>. The syntax looks like this:</p>
+<pre><code class="language-javascript">var Test_Object = new objects_unit.E_Object( diff , x , y , tile_offset_x , tile_offset_y , tile_offset_width , tile_offset_height , col_left , col_right , col_top , col_bottom , flippedX , flippedY , opacity );
+</code></pre>
+<p>It may seem a little bit confusing, so let's take a look at each of the arguments:</p>
+<ul>
+<li><code>diff</code>: You can use it to classify objects, and later, by writing:</li>
+</ul>
+<pre><code class="language-javascript">objects_unit.E_Objects.forEach(function(obj){
+
+    if(obj.diff == &quot;yourpreferred&quot;){
+
+        //DO WHATEVER YOU WANT FOR EACH OBJECT WITH THAT DIFF.
+        //ACCESS A PROPERTY OF THE OBJECT BY obj.property.
+
+    }
+
+    //IF YOU DON'T SPECIFY A DIFF, THAT CODE WILL RUN FOR ALL OBJECTS.
+
+});
+</code></pre>
+<p>You can do whatever you want to each object with a specific <strong>diff</strong>, or do anything for all objects.</p>
+<ul>
+<li><code>x</code>: The X position to draw the object.</li>
+<li><code>y</code>: The Y position to draw the object.</li>
+<li><code>tile_offset_x</code>: The <strong>tile_offset_x</strong> of its tile. <strong>Go back to the DRAWTILE section to learn more about it.</strong></li>
+<li><code>tile_offset_y</code>: The <strong>tile_offset_y</strong> of its tile. <strong>Go back to the DRAWTILE section to learn more about it.</strong></li>
+<li><code>tile_offset_with</code>: The <strong>tile_offset_with</strong> of its tile. <strong>Go back to the DRAWTILE section to learn more about it.</strong></li>
+<li><code>tile_offset_height</code>: The <strong>tile_offset_height</strong> of its tile. <strong>Go back to the DRAWTILE section to learn more about it.</strong></li>
+<li><code>col_left</code>: The <strong>Left margin</strong> of the collision inside the drawn tile's box.</li>
+<li><code>col_right</code>: The <strong>Right margin</strong> of the collision inside the drawn tile's box.</li>
+<li><code>col_top</code>: The <strong>Top margin</strong> of the collision inside the drawn tile's box.</li>
+<li><code>col_bottom</code>: The <strong>Top margin</strong> of the collision inside the drawn tile's box.</li>
+<li><code>flippedX</code>: The <strong>Horizontal flipping</strong> of the object's tile.</li>
+<li><code>flippedY</code>: The <strong>Vertical flipping</strong> of the object's tile.</li>
+<li><code>opacity</code>: The <strong>Opacity</strong> of the object's tile. <strong>Go back to the DRAWTILE section to learn more about it.</strong></li>
+</ul>
+<h2 id="reading-changing-properties-of-objects">\ Reading / changing properties of objects</h2>
+<p>To read/modify one of the properties you'll access it by <code>objectname</code> + <code>.</code> + <code>property</code></p>
+<p>For example:</p>
+<pre><code class="language-javascript">var ball = new objects_unit.E_Object(&quot;ball&quot;, 0, 0, 0, 0, 8, 8, 0, 0, 0, 0, false, false, 1);
+
+//CHANGING X IF X IS 0
+
+if(ball.x == 0){
+
+    ball.x = 8;
+
+}
+</code></pre>
+<p><strong>IMPORTANT: DON'T MODIFY THE colbottom<u>side</u>/coltop<u>side</u>/colright<u>side</u>/colleft<u>side</u> since these values are internals, and they will not change if you touch them. Change <u>colbottom</u>/<u>coltop</u>/<u>colright</u>/<u>colleft</u> instead</strong></p>
+<h2 id="understanding-collisions">\ Understanding collisions</h2>
+<p>For example, imagine that we have this character:</p>
+<p><img alt="16x16_character" src="img/Charactercoltest.png" /></p>
+<p>We can see that his collision, should be less than 16x16 pixels, so let's try shrinking the collision to make it fit the space that we want:</p>
+<p><img alt="9x15_col" src="img/Charactercoltestshrinked.png" /></p>
+<p>How do we do this with <strong>ElderBerryJS'</strong> collision system?? Well, let's take a look:</p>
+<p><img alt="" src="img/Charactercoltestlurd.png" /></p>
+<p>The green lines are <code>col_right</code> and <code>col_left</code>, and the orange lines are <code>col_top</code> and <code>col_bottom</code>.</p>
+<p>We can see that, as said before, we are just working with <strong>margins</strong> around an image to define a <strong>collision box</strong>.</p>
+<h2 id="previewing-collisions">\ Previewing collisions</h2>
+<p>By the moment, our project, using <strong>the character we just designed</strong>, and applying the <strong>collisions</strong> into an object, looks like this:</p>
+<p>TFDU:</p>
+<p><img alt="" src="img/coltestTFDU.png" /></p>
+<p>CODE:</p>
+<pre><code class="language-javascript">var Character = new objects_unit.E_Object(&quot;&quot;, 0, 0, 0, 0, 16, 16, 4, 3, 1, 0, false, false, 1);
+</code></pre>
+<p>RESULT:</p>
+<p><img alt="characterdrawn" src="img/colexamplewithoutwireframes.png" /></p>
+<p>We can see the image, but <strong>we don't have any way of knowing if the collisions are being well prepared</strong>.</p>
+<p>For checking the collisions, you'll need to go to the beginning of <code>yourcode.js</code>, and look at <strong>this line</strong>:</p>
+<pre><code class="language-javascript">objects_unit.setcolwireframe(false);
+</code></pre>
+<p>If you want to see the collisions, change <code>false</code> to <code>true</code> inside the brackets, and you'll see this:</p>
+<p><img alt="charactercols" src="img/colexamplewithwireframes.png" /></p>
+<p><strong>Now you can see the collision box in that pink box!!</strong></p>
+<h2 id="detecting-collisions">\ Detecting collisions</h2>
+<p>Even though this may seem hard, it's really easy!! You just need to access <code>colliding()</code>  from the <code>objects_unit</code>:</p>
+<pre><code class="language-javascript">if(objects_unit.colliding(obj1, obj2)){
+
+        //DO WHAT YOU WANT
+
+}
+</code></pre>
+<p>You can see that you only need to replace <code>obj1</code> with one object, and <code>obj2</code> with another one, and then, put the code you want inside the IF.</p>
+<p>For example:</p>
+<p>I have updated the code and the TFDU to add a new character:</p>
+<p><img alt="" src="img/otherchaacTFDU.png" /></p>
+<pre><code class="language-javascript">var Character = new objects_unit.E_Object(&quot;&quot;, 0, 0, 0, 0, 16, 16, 4, 3, 1, 0, false, false, 1);
+var Slime = new objects_unit.E_Object(&quot;&quot;, 64, 64, 16, 0, 8, 8, 1, 1, 1, 1, false, false, 1);
+</code></pre>
+<p><img alt="slimecharacadded" src="img/slimecharacadded.png" /></p>
+<p>Now let's draw text when they collide:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    if(objects_unit.colliding(Character, Slime)){
+
+        draw_unit.drawText(draw_unit.Font_Arcade, &quot;Colliding!!&quot;, &quot;#ffffff&quot;, 72, 72);
+
+    }
+
+}
+</code></pre>
+<p>Not colliding:</p>
+<p><img alt="slimecharacadded" src="img/slimecharacadded.png" /></p>
+<p>Colliding:</p>
+<p><img alt="" src="img/touchingslime.png" /></p>
+<h2 id="destroying-objects">\ Destroying objects</h2>
+<p>To delete objects, is as easy as using the <code>objects_unit.destroy()</code> function:</p>
+<pre><code class="language-javascript">objects_unit.destroy(Objecttodestroy);
+</code></pre>
+<p>For example, let's make that the collision example from before, makes the slime dissapear:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    if(objects_unit.colliding(Character, Slime)){
+
+        objects_unit.destroy(Slime);
+
+    }
+
+}
+</code></pre>
+<p>Not colliding:</p>
+<p><img alt="slimecharacadded" src="img/slimecharacadded.png" /></p>
+<p>Colliding:</p>
+<p><img alt="collidedestroy" src="img/collidedestroy.png" /></p>
+<h1 id="changing-cameras-position">* Changing camera's position</h1>
+<p>The camera in ElderBerryJS is an <strong>object</strong> in itself, so to move it, we just need to modify the X/Y position of the <code>E_camera</code> Object:</p>
+<pre><code class="language-javascript">E_camera.x = 16; //Camera's x is now 16
+E_camera.y = 32; //Camera's y is now 32
+</code></pre>
+<p>That way we can change from this from before:</p>
+<p><img alt="slimecharacadded" src="img/slimecharacadded.png" /></p>
+<p>To this with the camera pointing at the Slime (only at the beginning):</p>
+<pre><code class="language-javascript">export function Start(){
+
+    E_camera.x = Slime.x;
+    E_camera.y = Slime.y;
+
+}
+</code></pre>
+<p><img alt="camerafollowing" src="img/camerafollowing.png" /></p>
+<h1 id="playing-sound-beta">* Playing sound <strong>(BETA)</strong></h1>
+<p>The sound playing functionalities are in a <strong>BETA</strong> state, since is a little bit <strong>badly coded</strong>, but let's take a look at the current functionalities:</p>
+<p>To play sound, we'll use the <code>sound_unit</code>'s <code>playSound()</code> function.</p>
+<p>First of all, put your music in the same directory as <code>yourcode.js</code>, and then for each music file, create a variable with the file name written like this example:</p>
+<pre><code class="language-javascript">var song = new Audio(&quot;song.mp3&quot;);
+</code></pre>
+<p>Then, inside Update, write this:</p>
+<pre><code class="language-javascript">export function Update(){
+
+    sound_unit.playSound(song);
+
+}
+</code></pre>
+<p>Then, if you play your game, you may see that you can't hear anything. That's because you need to do an user input to start the sound (that's something that every popular browser does for security reasons). So yeah, if you press a key or click, from now on you'll hear sound.</p>
+<h1 id="exporting">* Exporting</h1>
+<p>That's not available yet. Something what you can do is host online the game with something like <a href="https://pages.github.com/">Github Pages</a>, but take in count that people will be able to see your code.</p>
+<h1 id="what-to-do-now">* What to do now</h1>
+<ul>
+<li>Report any issue at https://github.com/ElderBerryJS/ElderBerryJS/issues</li>
+<li>Make questions or discuss anything in https://github.com/ElderBerryJS/ElderBerryJS/discussions</li>
+<li>Create!!</li>
+</ul></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.2.1
+Build Date UTC : 2021-07-13 19:11:00.620978+00:00
+-->
